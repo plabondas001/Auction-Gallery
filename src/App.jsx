@@ -1,7 +1,16 @@
+import { Suspense } from "react";
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
+import LoadData from "./Components/Data/LoadData";
+
+const fetchData = async () => {
+  const res = await fetch("blogs.json")
+  return res.json()
+}
 
 function App() {
+
+  const promiseData = fetchData()
   return (
     <div>
       {/* Navbar */}
@@ -25,6 +34,11 @@ function App() {
           </button>
         </div>
       </Header>
+
+      {/*Data*/}
+      <Suspense>
+        <LoadData promiseData= {promiseData}></LoadData>
+      </Suspense>
     </div>
   );
 }
