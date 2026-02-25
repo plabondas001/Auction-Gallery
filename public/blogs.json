@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "title": "Local M3 Camera",
+        "currentBidPrice": 2500,
+        "timeLeft": "2 days left",
+        "image":"https://i.ibb.co.com/m5b64sdW/Bid1-min.png"
+    },
+
+    {
+        "id": 2,
+        "title": "Electric Guitar",
+        "currentBidPrice": 500,
+        "timeLeft": "3 days left",
+        "image":"https://i.ibb.co.com/1YL4r1DK/Bid2-min.png"
+    },
+    {
+        "id": 3,
+        "title": "Orginal Apple",
+        "currentBidPrice": 5000,
+        "timeLeft": "1 days left",
+        "image":"https://i.ibb.co.com/CpqSJpry/Bid3-min.png"
+    },
+    {
+        "id": 4,
+        "title": "Rolex",
+        "currentBidPrice": 3500,
+        "timeLeft": "12 hours left",
+        "image":"https://i.ibb.co.com/JRnV6s21/Bid4-min.png"
+    },
+    {
+        "id": 5,
+        "title": "Lounge Chair",
+        "currentBidPrice": 2890,
+        "timeLeft": "6 days left",
+        "image":"https://i.ibb.co.com/cSxzJLtw/Bid5-min.png"
+    },
+    {
+        "id": 6,
+        "title": "Screen Print",
+        "currentBidPrice": 2850,
+        "timeLeft": "4 days left",
+        "image":"https://i.ibb.co.com/PGgDw3Q4/Bid7-min.png"
+    }
+]
