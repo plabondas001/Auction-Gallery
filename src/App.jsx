@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import LoadData from "./Components/Data/LoadData";
+import Spiner from "./Components/Spiner/Spiner";
 
 const fetchData = async () => {
   const res = await fetch("blogs.json")
@@ -36,7 +37,7 @@ function App() {
       </Header>
 
       {/*Data*/}
-      <Suspense>
+      <Suspense fallback = {<Spiner>Loading...</Spiner>}>
         <LoadData promiseData= {promiseData}></LoadData>
       </Suspense>
     </div>
