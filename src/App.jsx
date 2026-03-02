@@ -3,6 +3,8 @@ import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import LoadData from "./Components/Data/LoadData";
 import Spiner from "./Components/Spiner/Spiner";
+import { ToastContainer } from "react-toastify";
+import Footer from "./Components/Footer/Footer";
 
 const fetchData = async () => {
   const res = await fetch("blogs.json")
@@ -40,6 +42,20 @@ function App() {
       <Suspense fallback = {<Spiner>Loading...</Spiner>}>
         <LoadData promiseData= {promiseData}></LoadData>
       </Suspense>
+      <Footer></Footer>
+
+      <ToastContainer
+position="top-right"
+autoClose={2000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     </div>
   );
 }
